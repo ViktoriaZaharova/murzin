@@ -1,0 +1,57 @@
+@import "vars"
+
+header
+	padding: 75px 0 52px
+
+.logo
+	@include d-flex
+	max-width: 367px
+	width: 100%
+
+.nav-menu
+	margin: 0 auto
+
+.menu
+	display: flex
+	align-items: center
+	font-size: 24px
+	li
+		margin: 0 38px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: $accent
+			position: relative
+			z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				z-index: -1
+				height: 100%
+				width: 0
+				background: $accent
+				transition: .3s ease
+			&:hover
+				color: #fff
+				&::before
+					width: 100%
+
+.phone
+	margin: 0 37px 0 58px
+	color: $accent
+	position: relative
+	z-index: 1
+	font-size: 32px
+	font-weight: 900
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		height: 100%
+		width: 0
+		background: $accent
+		transition: .3s ease
+	&:hover
+		color: #fff
+		&::before
+			width: 100%

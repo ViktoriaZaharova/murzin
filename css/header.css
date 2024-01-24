@@ -1,0 +1,83 @@
+header {
+  padding: 75px 0 52px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 367px;
+  width: 100%;
+}
+
+.nav-menu {
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+.menu li {
+  margin: 0 38px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #302F35;
+  position: relative;
+  z-index: 1;
+}
+.menu li a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0;
+  background: #302F35;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.menu li a:hover {
+  color: #fff;
+}
+.menu li a:hover::before {
+  width: 100%;
+}
+
+.phone {
+  margin: 0 37px 0 58px;
+  color: #302F35;
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 900;
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0;
+  background: #302F35;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.phone:hover {
+  color: #fff;
+}
+.phone:hover::before {
+  width: 100%;
+}

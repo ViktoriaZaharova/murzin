@@ -1,0 +1,166 @@
+@import 'vars'
+
+.home
+	width: 100%
+	background: url('../img/home-bg.png') no-repeat center
+	background-size: cover
+	min-height: 609px
+	background-attachment: fixed
+
+.home-image
+	width: 100%
+	img
+		width: 100%
+
+// about
+.about
+	.h2
+		margin: 20px 0 54px
+
+.about-box
+	margin: 0 0 136px
+	.box-text
+		max-width: 633px
+
+.about-box2
+	.about-box__content
+		padding: 200px 0 0 100px
+	h3
+		max-width: 382px	
+
+.about-box3
+	position: relative
+	z-index: -1
+	.about-box__content
+		padding: 0 0 0 57px
+
+.about-box4
+	margin: 280px 0 0
+	.about-box__content	
+		padding: 0 0 0 150px	
+
+.about-image
+	@include d-flex
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.about-image1
+	height: 661px
+
+.about-image2
+	height: 1003px
+	max-width: 822px
+
+.about-image3
+	height: 925px
+	max-width: 837px
+	margin: -550px 0 0 -200px
+
+.about-image4
+	max-width: 804px
+	height: 907px	
+	margin: -342px 0 175px -100px
+
+.about-image5
+	height: 1130px
+	min-width: 978px	
+
+// catalog section
+.catalog-section
+	margin: 136px 0 60px
+
+
+.link-page
+	margin-left: auto
+
+.product-card
+	width: 100%
+	height: 100%
+	font-size: 32px
+	&__img
+		@include d-flex
+		background: #fff
+		height: 367px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		padding: 34px 0 0
+	&__title
+		text-transform: uppercase
+		color: $accent
+		&:hover
+			color: #000
+			
+	.btn
+		margin: 48px 0 0	
+
+.price-wrapper
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 24px 0 0							
+
+.catalog-row
+	margin: 0 -42px
+	.col-12
+		padding: 0 42px
+
+// about masters
+.about-masters
+	width: 100%
+	background: url('../img/master-bg.jpeg') no-repeat center top
+	background-size: cover
+	background-attachment: fixed
+	padding: 720px 0 92px
+	color: #fff
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, #302F35 9.9%, rgba(48, 47, 53, 0.00) 36.06%)
+		left: 0
+		top: 0
+	.container
+		max-width: 1920px
+		padding: 0 87px
+	h2
+		color: #fff
+		font-family: 'DelaGothicOne', sans-serif	
+		font-size: 252px
+		line-height: 255px
+		text-transform: uppercase
+		margin: 0 0 74px
+	.box-text
+		max-width: 1490px		
+
+// stages-work
+.stages-work
+	padding: 140px 0 100px
+	background: $accent
+	color: #fff
+	h2
+		color: #fff
+		margin: 0 0 57px
+		font-weight: normal	
+
+.stages-work-box
+	display: flex
+	align-items: center
+	font-size: 24px
+	&__number
+		font-weight: 900
+		font-size: 118px
+		text-transform: uppercase
+		line-height: 130px
+		margin: 0 38px 0 0
+	&__content
+		max-width: 663px
+

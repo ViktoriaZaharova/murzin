@@ -1,0 +1,81 @@
+@import "vars"
+
+footer
+	color: #fff
+	background: $accent
+	padding: 70px 0 104px
+	position: relative
+	z-index: 1
+	font-size: 20px
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%,0)
+		background: #fff
+		height: 1px
+		width: 100%
+		max-width: 1720px
+		z-index: -1
+	.logo
+		filter: brightness(0) invert(1)
+		max-width: 302px
+	.nav-menu
+		margin: 0 auto 0 60px	
+	.menu
+		font-size: 20px
+		li
+			a
+				color: #fff
+				&:before
+					background: #000
+	.form-search
+		margin: 0 67px 0 0
+		input
+			border-color: #fff		
+			color: #fff
+			font-size: 20px
+			&::placeholder
+				color: #fff
+		[type='submit']
+			fill: #fff			
+	.btn
+		font-weight: normal		
+
+.footer-phone
+	color: #fff
+	font-size: 118px
+	line-height: 130px
+	margin: 0 auto 0 0
+	&:before
+		background: #000
+
+.footer-bottom
+	margin: 68px 0 0
+
+.footer-box
+	font-size: 20px
+	margin: 0 0 0 60px
+	p	
+		margin: 0 0 20px
+		&:last-child
+			margin: 0
+	a
+		color: #fff
+		margin: 0 0 20px
+		position: relative
+		z-index: 1		
+		&:hover
+			&::before
+				width: 100%
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 0
+			height: 100%
+			background: #000
+			left: 0
+			top: 0
+			transition: .3s ease			
