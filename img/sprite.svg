@@ -6,7 +6,13 @@
 	</symbol>
 
 	<symbol id="arrow-bottom" viewBox="0 0 84 42">
-		<path d="M1 1L42 41L83 1"/>
+		<path d="M1 1L42 41L83 1" />
 	</symbol>
+
+	<symbol id="close" viewBox="0 0 30 30">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M4.21718 0L2.09807e-05 4.21716L10.7826 14.9997L0 25.7823L4.21716 29.9995L14.9997 19.2169L25.7822 29.9993L29.9994 25.7822L19.2169 14.9997L29.9993 4.21728L25.7822 0.000115952L14.9997 10.7826L4.21718 0Z"/>
+	</symbol>
+
 
 </svg>

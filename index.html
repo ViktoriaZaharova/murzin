@@ -25,8 +25,11 @@
 <body>
 
 	<section class="home">
+		<img src="img/home-text.svg" alt="">
 		<!-- <div class="home-image"><img src="img/home-bg.png" alt=""></div> -->
 	</section>
+
+	
 
 
 	<header>
@@ -306,7 +309,8 @@
 							<li><a href="#" target="_blank"><img src="img/tg.svg" alt=""></a></li>
 						</ul>
 
-						<a href="https://elevenlab.ru" class="developer-link" target="_blank"><img src="img/logo-developer.svg" alt=""></a>
+						<a href="https://elevenlab.ru" class="developer-link" target="_blank"><img src="img/logo-developer.svg"
+								alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -332,6 +336,261 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></button>
+
+				<div class="modal-body">
+					<div class="product-wrapper">
+
+						<div class="product-slider-preview">
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+						</div>
+						<div class="product-slider-max">
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+						</div>
+
+						<div class="product-content">
+							<div class="product-title">КОЛЬЦО SA-10114</div>
+							<div class="price-wrapper">
+								<div class="price">24 000 Р</div>
+								<div class="tooltip-wrapper">
+									<div class="btn-tooltip"><img src="img/info.svg" alt=""></div>
+									<div class="tooltip-box">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, recusandae temporibus commodi
+											beatae quaerat alias enim eligendi facilis amet, voluptatibus corrupti magni eum laudantium
+											voluptas quam. Nobis animi illum adipisci.</p>
+									</div>
+								</div>
+							</div>
+
+							<ul class="list-characteristics my-ul">
+								<li>
+									<p>Материал:</p>
+									<span>Серебро 925</span>
+								</li>
+								<li>
+									<p>Вставка:</p>
+									<span>Цавориты, сапфиры</span>
+								</li>
+								<li>
+									<p>Покрытие:</p>
+									<span>Родий, золочение</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<h2>Понравилось украшение?</h2>
+					<div class="subtitle text-center">
+						<p>Заполните форму, и мы создадим для вас эскиз в похожем стиле</p>
+					</div>
+					<form method="post" class="form form-callback">
+						<div class="row">
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="Имя" name="name">
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="Телефон" name="phone" required>
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="E-mail" name="mail" required>
+								</label>
+							</div>
+							<div class="col-12 col-lg-8 mb-30">
+								<label>
+									<input type="text" placeholder="Комментарий" name="comment">
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<button type="submit" class="btn btn-white w-100">Оставить заявку</button>
+							</div>
+							<div class="col-12 text-center">
+								<div class="consent">
+									<p>нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></button>
+	
+				<div class="modal-body">
+					<div class="product-wrapper">
+	
+						<div class="product-slider-preview">
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+						</div>
+						<div class="product-slider-max">
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="product-slider__item"><img src="img/product1.png" alt=""></div>
+							</div>
+						</div>
+	
+						<div class="product-content">
+							<div class="product-title">КОЛЬЦО SA-10114</div>
+							<div class="price-wrapper">
+								<div class="price">24 000 Р</div>
+								<div class="tooltip-wrapper">
+									<div class="btn-tooltip"><img src="img/info.svg" alt=""></div>
+									<div class="tooltip-box">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, recusandae temporibus commodi
+											beatae quaerat alias enim eligendi facilis amet, voluptatibus corrupti magni eum laudantium
+											voluptas quam. Nobis animi illum adipisci.</p>
+									</div>
+								</div>
+							</div>
+	
+							<ul class="list-characteristics my-ul">
+								<li>
+									<p>Материал:</p>
+									<span>Серебро 925</span>
+								</li>
+								<li>
+									<p>Вставка:</p>
+									<span>Цавориты, сапфиры</span>
+								</li>
+								<li>
+									<p>Покрытие:</p>
+									<span>Родий, золочение</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<h2>Спасибо за заявку</h2>
+					<div class="subtitle text-center">
+						<p>Мы свяжемся с вами в ближайшее время</p>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+		
+					<div class="modal-footer">
+						<h2>Заказать звонок</h2>
+						<div class="subtitle text-center">
+							<p>Заполните форму, и мы создадим для вас эскиз в похожем стиле</p>
+						</div>
+						<form method="post" class="form form-callback">
+							<div class="row">
+								<div class="col-12 col-lg-4 mb-30">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+								</div>
+								<div class="col-12 col-lg-4 mb-30">
+									<label>
+										<input type="text" placeholder="Телефон" name="phone" required>
+									</label>
+								</div>
+								<div class="col-12 col-lg-4 mb-30">
+									<label>
+										<input type="text" placeholder="E-mail" name="mail" required>
+									</label>
+								</div>
+								<div class="col-12 col-lg-8 mb-30">
+									<label>
+										<input type="text" placeholder="Комментарий" name="comment">
+									</label>
+								</div>
+								<div class="col-12 col-lg-4 mb-30">
+									<button type="submit" class="btn btn-white w-100">Оставить заявку</button>
+								</div>
+								<div class="col-12 text-center">
+									<div class="consent">
+										<p>нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

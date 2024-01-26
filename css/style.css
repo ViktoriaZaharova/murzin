@@ -259,6 +259,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #302F35;
 }
 
+.btn-white {
+  background: #fff;
+  color: #302F35;
+}
+.btn-white:hover {
+  background: #000;
+  color: #fff;
+}
+
 .svg-icon {
   display: inline-block;
   width: 100%;
@@ -323,6 +332,10 @@ h3, .h3 {
   line-height: normal;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -364,6 +377,74 @@ h3, .h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-arrow {
+  fill: none;
+  padding: 0;
+  z-index: 1;
+  opacity: 1;
+  stroke: #302F35;
+  width: 82px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-next {
+  margin: 48px auto 0;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0 15px;
+}
+.tooltip-wrapper:hover .tooltip-box {
+  display: block;
+}
+
+.btn-tooltip {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.tooltip-box {
+  position: absolute;
+  bottom: 100%;
+  margin: 0 auto 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #fff;
+  padding: 10px;
+  min-width: 200px;
+  max-width: 200px;
+  font-size: 14px;
+  display: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .label-checkbox {

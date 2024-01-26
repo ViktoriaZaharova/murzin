@@ -176,6 +176,13 @@ button, .btn
 		background: #fff
 		color: $accent		
 
+.btn-white
+	background: #fff
+	color: #302F35
+	&:hover
+		background: #000
+		color: #fff		
+
 .svg-icon
 	display: inline-block
 	width: 100%
@@ -229,6 +236,9 @@ h3, .h3
 	text-transform: uppercase
 	line-height: normal
 
+.mb-30
+	margin-bottom: 30px	
+
 .mb-40
 	margin-bottom: 40px	
 
@@ -250,7 +260,54 @@ h3, .h3
 		&:last-child
 			margin: 0
 		a
-			@include d-flex		
+			@include d-flex	
+
+// slick slider
+.slick-slider
+	width: 100%
+
+.slick-arrow
+	fill: none
+	padding: 0
+	z-index: 1
+	opacity: 1
+	stroke: #302F35
+	width: 82px
+	height: 40px
+	@include d-flex	
+
+
+.slick-next
+	margin: 48px auto 0		
+
+.tooltip-wrapper
+	position: relative
+	z-index: 1
+	margin: 0 0 0 15px
+	&:hover
+		.tooltip-box
+			display: block
+
+.btn-tooltip
+	width: 24px
+	height: 24px
+	@include d-flex
+	cursor: pointer
+
+.tooltip-box
+	position: absolute
+	bottom: 100%
+	margin: 0 auto 5px
+	left: 50%
+	transform: translate(-50%,0)
+	background: #fff
+	padding: 10px
+	min-width: 200px
+	max-width: 200px
+	font-size: 14px	
+	display: none
+	box-shadow: 0 0 10px rgba(#000, .2)
+
 
 //checkbox my
 .label-checkbox

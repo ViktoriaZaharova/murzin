@@ -79,3 +79,131 @@ footer
 			left: 0
 			top: 0
 			transition: .3s ease			
+
+// modal
+.modal-dialog
+	max-width: 1428px
+	font-size: 24px
+
+.modal-content
+	border: none
+	border-radius: 0
+	background: #F0F0F2
+
+.btn-close
+	position: absolute
+	padding: 0
+	margin: 0
+	z-index: 2
+	top: 44px
+	right: 60px
+	@include d-flex
+	opacity: 1
+	fill: #302F35
+	width: 30px
+	height: 30px
+	min-width: 30px
+	border: none
+	border-radius: 0
+
+#callbackModal
+	.btn-close
+		fill: #fff
+
+
+.modal-body
+	padding: 83px 60px 43px
+	margin: 0
+	border: none
+	
+
+.modal-footer
+	color: #fff
+	background: #302F35
+	padding: 57px 60px 50px
+	border-radius: 0
+	border: none
+	> *
+		margin: 0
+	h2
+		text-align: center
+		color: #fff
+		margin: 0 auto 13px
+
+.consent
+	font-size: 12px
+
+.subtitle
+	width: 100%
+	margin: 0 auto 0 
+	font-size: 24px			
+
+.form-callback
+	margin: 44px auto 0						
+
+.product-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.product-slider-preview
+	width: 112px
+	.slick-prev
+		display: none !important
+	.product-slider__item
+		height: 112px
+		width: 100%
+		@include d-flex
+		cursor: pointer
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.slick-slide	
+		margin: 0 0 40px
+		opacity: 0.5
+		&.slick-current
+			opacity: 1	
+
+
+.product-slider-max
+	width: 558px
+	margin: 0 0 0 80px		
+	.product-slider__item
+		width: 100%
+		height: 558px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover	
+
+.product-content
+	width: calc(100% - 558px - 80px - 112px)
+	padding: 84px 0 0 40px
+	.price
+		font-weight: 900
+		font-size: 32px
+
+
+.product-title
+	font-size: 32px
+	margin: 0 0 37px
+	width: 100%
+
+.list-characteristics
+	margin: 80px 0 0
+	li
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		margin: 0 0 40px
+		&:last-child
+			margin: 0
+	p
+		min-width: 168px
+		font-weight: 500
+
+
