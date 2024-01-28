@@ -17,6 +17,7 @@ footer
 		height: 1px
 		width: 100%
 		max-width: 1720px
+		width: calc(100% - 30px)
 		z-index: -1
 	.logo
 		filter: brightness(0) invert(1)
@@ -105,6 +106,11 @@ footer
 	min-width: 30px
 	border: none
 	border-radius: 0
+	outline: none
+	box-shadow: none
+	&:hover, &:focus
+		outline: none
+		box-shadow: none
 
 #callbackModal
 	.btn-close
@@ -155,11 +161,10 @@ footer
 		height: 112px
 		width: 100%
 		@include d-flex
+		background: #fff
 		cursor: pointer
 		img
-			width: 100%
-			height: 100%
-			object-fit: cover
+			max-height: 100%
 	.slick-slide	
 		margin: 0 0 40px
 		opacity: 0.5
@@ -174,10 +179,9 @@ footer
 		width: 100%
 		height: 558px
 		@include d-flex
+		background: #fff
 		img
-			width: 100%
-			height: 100%
-			object-fit: cover	
+			max-height: 100%
 
 .product-content
 	width: calc(100% - 558px - 80px - 112px)

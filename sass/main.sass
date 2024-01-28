@@ -2,7 +2,7 @@
 
 .home
 	width: 100%
-	background: url('../img/home-bg.jpeg') no-repeat center -520px
+	background: url('../img/home-bg.jpeg') no-repeat center
 	background-size: cover
 	// min-height: 650px
 	background-attachment: fixed
@@ -16,6 +16,7 @@
 
 // about
 .about
+	overflow: hidden
 	.h2
 		margin: 20px 0 54px
 
@@ -28,7 +29,7 @@
 	.about-box__content
 		padding: 200px 0 0 100px
 	h3
-		max-width: 382px	
+		max-width: 382px
 
 .about-box3
 	position: relative
@@ -38,8 +39,8 @@
 
 .about-box4
 	margin: 280px 0 0
-	.about-box__content	
-		padding: 0 0 0 150px	
+	.about-box__content
+		padding: 0 0 0 150px
 
 .about-image
 	@include d-flex
@@ -62,17 +63,16 @@
 
 .about-image4
 	max-width: 804px
-	height: 907px	
+	height: 907px
 	margin: -342px 0 175px -100px
 
 .about-image5
 	height: 1130px
-	min-width: 978px	
+	min-width: 978px
 
 // catalog section
 .catalog-section
 	margin: 136px 0 60px
-
 
 .link-page
 	margin-left: auto
@@ -85,10 +85,11 @@
 		@include d-flex
 		background: #fff
 		height: 367px
+		width: 100%
 		img
-			width: 100%
-			height: 100%
-			object-fit: cover
+			// width: 100%
+			max-height: 100%
+
 	&__body
 		padding: 34px 0 0
 	&__title
@@ -96,15 +97,15 @@
 		color: $accent
 		&:hover
 			color: #000
-			
+
 	.btn
-		margin: 48px 0 0	
+		margin: 48px 0 0
 
 .price-wrapper
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	margin: 24px 0 0							
+	margin: 24px 0 0
 
 .catalog-row
 	margin: 0 -42px
@@ -135,13 +136,13 @@
 		padding: 0 87px
 	h2
 		color: #fff
-		font-family: 'DelaGothicOne', sans-serif	
+		font-family: 'DelaGothicOne', sans-serif
 		font-size: 252px
 		line-height: 255px
 		text-transform: uppercase
 		margin: 0 0 74px
 	.box-text
-		max-width: 1490px		
+		max-width: 1490px
 
 // stages-work
 .stages-work
@@ -151,7 +152,7 @@
 	h2
 		color: #fff
 		margin: 0 0 57px
-		font-weight: normal	
+		font-weight: normal
 
 .stages-work-box
 	display: flex
@@ -165,4 +166,3 @@
 		margin: 0 38px 0 0
 	&__content
 		max-width: 663px
-

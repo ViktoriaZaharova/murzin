@@ -8,6 +8,24 @@ $('.product-slider-preview').slick({
 	asNavFor: '.product-slider-max',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+				vertical: false,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 2,
+				vertical: false,
+				infinite: true,
+			}
+		}
+	]
 });
 
 $('.product-slider-max').slick({
@@ -20,4 +38,13 @@ $('.product-slider-max').slick({
 
 $('.modal').on('shown.bs.modal', function (e) {
 	$('.slick-slider').slick('setPosition');
+});
+
+$('.btn-burger').on('click', function (e) {
+	e.preventDefault();
+	$('header .nav-menu').fadeToggle()
+});
+
+$('.nav-menu__close').on('click', function () {
+	$('header .nav-menu').fadeOut()
 });

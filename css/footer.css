@@ -17,6 +17,7 @@ footer::before {
   height: 1px;
   width: 100%;
   max-width: 1720px;
+  width: calc(100% - 30px);
   z-index: -1;
 }
 footer .logo {
@@ -146,6 +147,14 @@ footer .btn {
   min-width: 30px;
   border: none;
   border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-close:hover, .btn-close:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #callbackModal .btn-close {
@@ -218,13 +227,11 @@ footer .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #fff;
   cursor: pointer;
 }
 .product-slider-preview .product-slider__item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 100%;
 }
 .product-slider-preview .slick-slide {
   margin: 0 0 40px;
@@ -250,12 +257,10 @@ footer .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #fff;
 }
 .product-slider-max .product-slider__item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 100%;
 }
 
 .product-content {

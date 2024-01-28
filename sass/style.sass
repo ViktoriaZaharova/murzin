@@ -46,6 +46,9 @@ body
 	background: #F0F0F2
 	color: #000
 
+html, body
+	overflow-x: hidden	
+
 img
 	display: block
 	max-width: 100%
@@ -269,12 +272,14 @@ h3, .h3
 .slick-arrow
 	fill: none
 	padding: 0
-	z-index: 1
+	z-index: 3
 	opacity: 1
 	stroke: #302F35
 	width: 82px
 	height: 40px
 	@include d-flex	
+	background: transparent
+	box-shadow: none
 
 
 .slick-next
