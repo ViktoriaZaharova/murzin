@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
 @font-face {
   font-family: "DelaGothicOne";
   font-weight: 400;
@@ -146,6 +147,18 @@ label:last-child {
 textarea {
   resize: none;
   padding: 17px 25px 0;
+  height: 64px;
+}
+
+.select-my {
+  border: 1px solid #302F35;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent url("../img/arrow-select.svg") no-repeat calc(100% - 32px) center;
+  background-size: 37px;
+  color: #000;
+  padding: 0 60px 0 36px;
   height: 64px;
 }
 
@@ -318,6 +331,10 @@ h1, .h1 {
   line-height: 130px;
 }
 
+h1 {
+  max-width: 1651px;
+}
+
 h2, .h2 {
   font-size: 48px;
   font-weight: 900;
@@ -454,6 +471,54 @@ h3, .h3 {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.nav-pagination {
+  width: 100%;
+  margin: 35px 0 0;
+}
+
+.pagination {
+  width: 100%;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pagination .page-item:not(:first-child) .page-link {
+  margin: 0;
+}
+.pagination .page-link {
+  padding: 0;
+  border: none;
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+  border-radius: 0;
+  background: transparent;
+}
+.pagination .page-link:hover {
+  color: #302F35;
+}
+.pagination .page-item {
+  margin: 0 10px 0 0;
+}
+.pagination .page-item:last-child {
+  margin: 0;
+}
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+  border-radius: 0;
+}
+.pagination .page-item.active .page-link {
+  font-weight: bold;
+  background: transparent;
+}
+
 .label-checkbox {
   position: relative;
   display: -webkit-box;
@@ -462,28 +527,38 @@ h3, .h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
-}
-
-.inp-check {
-  display: none;
-}
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
+  color: #302F35;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
   cursor: pointer;
 }
+.label-checkbox input {
+  display: none;
+}
+.label-checkbox input:checked ~ .label-checkbox__custom::before {
+  opacity: 1;
+}
 
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.label-checkbox__custom {
+  margin: 2px 9px 0 0;
+  position: relative;
+  border: 1px solid #302F35;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  cursor: pointer;
+}
+.label-checkbox__custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #302F35;
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }

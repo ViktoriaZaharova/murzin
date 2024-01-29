@@ -47,7 +47,7 @@ body
 	color: #000
 
 html, body
-	overflow-x: hidden	
+	overflow-x: hidden
 
 img
 	display: block
@@ -105,6 +105,15 @@ label
 textarea
 	resize: none
 	padding: 17px 25px 0
+	height: 64px
+
+.select-my
+	border: 1px solid #302F35
+	appearance: none
+	background: transparent url('../img/arrow-select.svg') no-repeat calc(100% - 32px) center
+	background-size: 37px
+	color: #000
+	padding: 0 60px 0 36px
 	height: 64px
 
 .form-search
@@ -177,14 +186,14 @@ button, .btn
 	border: 1px solid #fff
 	&:hover, &:focus, &:active, &.active
 		background: #fff
-		color: $accent		
+		color: $accent
 
 .btn-white
 	background: #fff
 	color: #302F35
 	&:hover
 		background: #000
-		color: #fff		
+		color: #fff
 
 .svg-icon
 	display: inline-block
@@ -223,6 +232,9 @@ h1, .h1
 	text-transform: uppercase
 	line-height: 130px
 
+h1
+	max-width: 1651px
+
 h2, .h2
 	font-size: 48px
 	font-weight: 900
@@ -240,19 +252,19 @@ h3, .h3
 	line-height: normal
 
 .mb-30
-	margin-bottom: 30px	
+	margin-bottom: 30px
 
 .mb-40
-	margin-bottom: 40px	
+	margin-bottom: 40px
 
 .mb-54
-	margin-bottom: 54px	
+	margin-bottom: 54px
 
 .mb-60
-	margin-bottom: 60px	
+	margin-bottom: 60px
 
 .mb-110
-	margin-bottom: 110px	
+	margin-bottom: 110px
 
 .list-social
 	display: flex
@@ -263,7 +275,7 @@ h3, .h3
 		&:last-child
 			margin: 0
 		a
-			@include d-flex	
+			@include d-flex
 
 // slick slider
 .slick-slider
@@ -277,13 +289,12 @@ h3, .h3
 	stroke: #302F35
 	width: 82px
 	height: 40px
-	@include d-flex	
+	@include d-flex
 	background: transparent
 	box-shadow: none
 
-
 .slick-next
-	margin: 48px auto 0		
+	margin: 48px auto 0
 
 .tooltip-wrapper
 	position: relative
@@ -309,35 +320,76 @@ h3, .h3
 	padding: 10px
 	min-width: 200px
 	max-width: 200px
-	font-size: 14px	
+	font-size: 14px
 	display: none
 	box-shadow: 0 0 10px rgba(#000, .2)
 
+.nav-pagination
+	width: 100%
+	margin: 35px 0 0
+
+.pagination
+	width: 100%
+	font-size: 32px
+	font-family: $default-font
+	@include d-flex
+	.page-item:not(:first-child) .page-link
+		margin: 0
+	.page-link
+		padding: 0
+		border: none
+		text-align: center
+		font-size: 32px
+		color: #000
+		border-radius: 0
+		background: transparent
+		&:hover
+			color: $accent
+	.page-item
+		margin: 0 10px 0 0
+		&:last-child
+			margin: 0
+		&:first-child, &:last-child
+			.page-link
+				border-radius: 0
+		&.active
+			.page-link
+				font-weight: bold
+				background: transparent
 
 //checkbox my
 .label-checkbox
 	position: relative
 	display: flex
 	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
-
-.inp-check
-	display: none
-
-.checkbox-custom
-	margin: 0 12px 0 0
-	position: relative
-	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
+	color: #302F35
+	font-family: $default-font
+	font-size: 24px
 	cursor: pointer
+	input
+		display: none
+		&:checked
+			~ .label-checkbox__custom
+					&::before
+						opacity: 1
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
+.label-checkbox__custom
+	margin: 2px 9px 0 0
+	position: relative
+	border: 1px solid #302F35
+	width: 20px
+	height: 20px
+	min-width: 20px
+	cursor: pointer
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		background: #302F35
+		width: 12px
+		height: 12px
+		opacity: 0
+		transition: .3s ease
 //checkbox my end

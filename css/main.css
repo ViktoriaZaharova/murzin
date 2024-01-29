@@ -15,6 +15,24 @@
   width: 100%;
 }
 
+.parallax-text {
+  color: rgba(48, 47, 53, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.parallax-text span {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  color: #302F35;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
 .about {
   overflow: hidden;
 }
@@ -224,4 +242,108 @@
 }
 .stages-work-box__content {
   max-width: 663px;
+}
+
+.page {
+  margin: 0 0 155px;
+}
+
+.filter-wrapper {
+  width: 100%;
+  margin: 85px 0 100px;
+}
+.filter-wrapper__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.filter-wrapper__close {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  fill: #302F35;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter-box {
+  padding: 0 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+.filter-box::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: calc(100% - 20px);
+  background: #302F35;
+}
+.filter-box .h4 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Commissioner", sans-serif;
+  margin: 0;
+  width: 150px;
+}
+.filter-box:last-child {
+  padding-right: 0;
+  width: calc(100% - 440px - 520px);
+}
+.filter-box:last-child::before {
+  display: none;
+}
+.filter-box:first-child {
+  padding-left: 0;
+  max-width: 440px;
+}
+.filter-box:nth-child(2) {
+  max-width: 520px;
+}
+
+.list-checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.list-checkbox li {
+  margin: 0 0 20px 0;
+  width: 50%;
+}
+.list-checkbox.w-30 li {
+  width: 30%;
+}
+.list-checkbox.w-30 li:nth-child(3n) {
+  width: 40%;
+}
+
+.btn-filter {
+  display: none;
 }

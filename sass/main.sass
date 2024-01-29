@@ -14,6 +14,21 @@
 	img
 		width: 100%
 
+.parallax-text
+	color: rgba($accent, .1)
+	position: relative
+	overflow: hidden
+	span
+		content: attr(data-hover)
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 0
+		color: $accent
+		overflow: hidden
+		transition: all .1s ease
+
 // about
 .about
 	overflow: hidden
@@ -166,3 +181,78 @@
 		margin: 0 38px 0 0
 	&__content
 		max-width: 663px
+
+// page catalog
+.page
+	margin: 0 0 155px
+
+.filter-wrapper
+	width: 100%
+	margin: 85px 0 100px
+	&__content
+		width: 100%
+		display: flex
+		align-items: stretch
+	&__close
+		width: 20px
+		height: 20px
+		z-index: 1
+		position: absolute
+		right: 20px
+		top: 10px
+		cursor: pointer
+		fill: $accent
+		display: none
+		align-items: center
+		justify-content: center
+
+.filter-box
+	padding: 0 30px
+	width: 100%
+	display: flex
+	align-items: flex-start
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		width: 1px
+		height: calc(100% - 20px)
+		background: $accent
+
+	.h4
+		font-weight: bold
+		font-size: 20px
+		font-family: $font
+		margin: 0
+		width: 150px
+
+	&:last-child
+		padding-right: 0
+		width: calc(100% - 440px - 520px)
+		&::before
+			display: none
+	&:first-child
+		padding-left: 0
+		max-width: 440px
+	&:nth-child(2)
+		max-width: 520px
+
+.list-checkbox
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 0 20px 0
+		width: 50%
+	&.w-30
+		li
+			width: 30%
+			&:nth-child(3n)
+				width: 40%
+
+.btn-filter
+	display: none	

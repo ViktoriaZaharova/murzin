@@ -24,12 +24,6 @@
 
 <body>
 
-	<section class="home">
-		<img src="img/home-text.svg" alt="">
-		<!-- <div class="home-image"><img src="img/home-bg.png" alt=""></div> -->
-	</section>
-
-
 	<header>
 		<div class="container">
 			<div class="row">
@@ -40,9 +34,9 @@
 								<use xlink:href="img/sprite.svg#close"></use>
 							</svg></div>
 						<ul class="menu my-ul">
-							<li><a href="#about" class="go_to">о нас</a></li>
-							<li><a href="#catalog" class="go_to">витрина</a></li>
-							<li><a href="#contacts" class="go_to">контакты</a></li>
+							<li><a href="index.html#about">о нас</a></li>
+							<li><a href="index.html#catalog">витрина</a></li>
+							<li><a href="index.html#contacts">контакты</a></li>
 						</ul>
 						<form method="post" class="form-search">
 							<label>
@@ -78,97 +72,111 @@
 		</div>
 	</header>
 
-
-	<section class="about" id="about">
+	<section class="page page-catalog">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="parallax">
-						<h1 class="parallax-text"><span data-hover="Украшения A. Murzin созданы для целого мира эмоций">Украшения A. Murzin созданы для целого мира эмоций</span>Украшения A. Murzin созданы для целого
-							мира эмоций</h1>
-						<div class="h2 parallax-text"><span data-hover="Открой его для себя!">Открой его для себя!</span> Открой его для себя!</div>
-					</div>
+					<h1>Витрина</h1>
 				</div>
 			</div>
 
-			<div class="about-box about-box1">
-				<div class="row align-items-center">
-					<div class="col-12 col-lg-6">
-						<div class="about-box__content">
-							<div class="box-text mb-54">
-								<p>Мастерская Алексея Мурзина - это место, где вы можете воплотить свои мечты об идеальном украшении.
-									Все
-									изделия делаются
-									на заказ в соответствии с вашими пожеланиями и предпочтениями.</p>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="btn btn-accent btn-filter">Фильтр</a>
+					<div class="filter-wrapper">
+						<div class="filter-wrapper__close"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg></div>
+						<div class="filter-wrapper__content">
+							<div class="filter-box">
+								<label><select name="select" class="select-my">
+										<option value="кольца">кольца</option>
+										<option value="серьги">серьги</option>
+										<option value="браслеты">браслеты</option>
+									</select></label>
 							</div>
-							<h3>Здесь вы художник, а мы всего лишь воплощаем ваши идеи в жизнь.</h3>
+							<div class="filter-box">
+								<div class="h4">Материал:</div>
+								<ul class="list-checkbox my-ul">
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox" checked>
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Cеребро</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Золото</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Алюминий</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Бронза</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="filter-box">
+								<div class="h4">Камень:</div>
+								<ul class="list-checkbox my-ul w-30">
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox2">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Без камня</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox2">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Кварц</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox2">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Лунный камень</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox2">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Кварц</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox2">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Жемчуг</span>
+										</label>
+									</li>
+									<li>
+										<label class="label-checkbox">
+											<input type="checkbox" name="checkbox2">
+											<span class="label-checkbox__custom"></span>
+											<span class="label-checkbox__text">Кварц</span>
+										</label>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="about-image about-image1"><img src="img/about1.png" alt=""></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="about-box about-box2">
-				<div class="row">
-					<div class="col-12 col-lg-6 order-lg-1">
-						<div class="about-box__content">
-							<h3 class="mb-60">Ювелирный артистизм</h3>
-							<div class="box-text">
-								<p>Истинная ценность</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6">
-						<div class="about-image about-image2"><img src="img/about2.png" alt=""></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="about-box about-box3">
-				<div class="row align-items-center">
-					<div class="col-12 col-lg-6">
-						<div class="about-box__content">
-							<h3 class="mb-60">100% стиль</h3>
-							<div class="box-text">
-								<p>Роскошь - быть женщиной</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6">
-						<div class="about-image about-image3"><img src="img/about3.png" alt=""></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="about-box about-box4">
-				<div class="row">
-					<div class="col-12 col-lg-6 order-lg-1">
-						<div class="about-box__content">
-							<div class="about-image about-image4"><img src="img/about4.png" alt=""></div>
-							<h3 class="mb-60">Философия неправильности</h3>
-							<div class="box-text">
-								<p>Творческие изыскания</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6">
-						<div class="about-image about-image5"><img src="img/about5.jpeg" alt=""></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="catalog-section" id="catalog">
-		<div class="container">
-			<div class="row align-items-center mb-110">
-				<div class="col-12 col-lg-7">
-					<h2 class="h1">Витрина</h2>
-				</div>
-				<div class="col-12 col-lg-5">
-					<a href="catalog.html" class="btn btn-border-accent link-page">посмотреть все</a>
 				</div>
 			</div>
 
@@ -229,78 +237,79 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-54 product-col">
+					<div class="product-card">
+						<a href="#" class="product-card__img" data-bs-toggle="modal" data-bs-target="#productModal"><img
+								src="img/product1.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title" data-bs-toggle="modal" data-bs-target="#productModal">КОЛЬЦО
+								SA-10114</a>
+							<div class="price-wrapper">
+								<div class="price">24 000 Р</div>
+							</div>
+							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#productModal">подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-54 product-col">
+					<div class="product-card">
+						<a href="#" class="product-card__img" data-bs-toggle="modal" data-bs-target="#productModal"><img
+								src="img/product2.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title" data-bs-toggle="modal" data-bs-target="#productModal">КОЛЬЦО
+								SA-10114</a>
+							<div class="price-wrapper">
+								<div class="price">24 000 Р</div>
+							</div>
+							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#productModal">подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-54 product-col">
+					<div class="product-card">
+						<a href="#" class="product-card__img" data-bs-toggle="modal" data-bs-target="#productModal"><img
+								src="img/product3.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title" data-bs-toggle="modal" data-bs-target="#productModal">КОЛЬЦО
+								SA-10114</a>
+							<div class="price-wrapper">
+								<div class="price">24 000 Р</div>
+							</div>
+							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#productModal">подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-54 product-col">
+					<div class="product-card">
+						<a href="#" class="product-card__img" data-bs-toggle="modal" data-bs-target="#productModal"><img
+								src="img/product4.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title" data-bs-toggle="modal" data-bs-target="#productModal">КОЛЬЦО
+								SA-10114</a>
+							<div class="price-wrapper">
+								<div class="price">24 000 Р</div>
+							</div>
+							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#productModal">подробнее</a>
+						</div>
+					</div>
+				</div>
 
-	<section class="about-masters">
-		<div class="container">
-			<div class="row">
 				<div class="col-12">
-					<h2>Я-мурзин</h2>
-					<div class="box-text">
-						<p>Мастерская Алексея Мурзина знаменита своими качественными и изысканными работами, созданными с душой и
-							фантазией.
-							Ювелирная студия специализируется на производстве эксклюзивных украшений, которые сочетают в себе шик и
-							классику, гламур
-							и авангард. Так же, ювелирная студия производит коллекции изделия великолепного вкуса и элегантности с
-							более экономичным
-							вариантом приобретения.</p>
-					</div>
+					<nav class="nav nav-pagination">
+						<ul class="pagination">
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">15</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="stages-work">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h2>Как мы работаем?</h2>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12 col-lg-6 mb-40">
-					<div class="stages-work-box">
-						<div class="stages-work-box__number">1</div>
-						<div class="stages-work-box__content">
-							<p>Вы оставляете заявку на сайте или по телефону. Мы связываемся с вами и договариваемся о встрече</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6 mb-40">
-					<div class="stages-work-box">
-						<div class="stages-work-box__number">2</div>
-						<div class="stages-work-box__content">
-							<p>На личной встрече мы определяемся с <br>концепцией украшения. Если у вас есть эскиз - <br>мы его
-								обсуждаем. Если нет - рисуем
-								вместе.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6 mb-40">
-					<div class="stages-work-box">
-						<div class="stages-work-box__number">3</div>
-						<div class="stages-work-box__content">
-							<p>Мы готовим материалы и начинаем изготавливать изделия. Вы вносите предоплату. Время изготовления
-								зависит от сложности
-								работы.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6 mb-40">
-					<div class="stages-work-box">
-						<div class="stages-work-box__number">4</div>
-						<div class="stages-work-box__content">
-							<p>Вы приходите на примерку, и если все <br>хорошо, мы отдаем вам украшение, и вы оплачиваете оставшуюся
-								стоимость украшения.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<footer id="contacts">
 		<div class="footer-top">
@@ -310,9 +319,9 @@
 						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 						<nav class="nav nav-menu">
 							<ul class="menu my-ul">
-								<li><a href="#about" class="go_to">о нас</a></li>
-								<li><a href="#catalog" class="go_to">витрина</a></li>
-								<li><a href="#contacts" class="go_to">контакты</a></li>
+								<li><a href="index.html#about">о нас</a></li>
+								<li><a href="index.html#catalog">витрина</a></li>
+								<li><a href="index.html#contacts">контакты</a></li>
 							</ul>
 						</nav>
 

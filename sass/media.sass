@@ -35,6 +35,9 @@
 	.list-social
 		margin: 0 40px
 
+	.label-checkbox
+		font-size: 20px
+
 @media only screen and (max-width: 1570px)
 	body
 		font-size: 28px
@@ -109,6 +112,20 @@
 
 	.about-image3
 		margin: -350px 0 0 -100px
+
+	.filter-wrapper
+		margin: 20px 0
+
+	.label-checkbox
+		font-size: 18px
+
+	.filter-box
+		&:first-child
+			max-width: 380px
+		&:nth-child(2)
+			width: 460px
+		&:last-child
+			width: calc(100% - 380px - 460px)
 
 @media only screen and (max-width: 1400px)
 	.about-masters
@@ -237,7 +254,60 @@
 
 	.btn-close
 		top: 20px
-		right: 20px				
+		right: 20px
+
+	.filter-wrapper
+		display: none
+		position: fixed
+		background: #fff
+		left: 0
+		top: 0
+		height: 100%
+		max-width: 280px
+		padding: 30px
+		margin: 0
+		z-index: 10
+		overflow-y: auto
+		&__close
+			display: flex
+		&__content
+			flex-direction: column
+			align-items: flex-start
+
+	.list-checkbox
+		li
+			width: 100%
+		&.w-30
+			li
+				width: 100%
+				&:nth-child(3n)
+					width: 100%
+								
+
+	.filter-box
+		padding: 0
+		max-width: none
+		flex-wrap: wrap
+		margin: 20px 0 0
+		.h4
+			width: 100%
+			margin: 0 0 10px
+		&:last-child, &:first-child, &:nth-child(2)
+			width: 100%
+			max-width: none
+		&::before
+			display: none	
+
+	.btn-filter
+		display: flex
+		margin: 20px 0	
+		width: 100%		
+
+	.select-my
+		height: 54px
+		padding: 0 20px
+		background-size: 20px
+		background-position: calc(100% - 10px) center	
 
 @media only screen and (max-width: 1200px)
 	body
@@ -258,6 +328,9 @@
 
 	.modal-dialog
 		font-size: 20px
+
+	.page
+		margin: 0 0 60px	
 
 @media only screen and (max-width: 992px)
 	footer
@@ -440,10 +513,10 @@
 		display: flex !important
 
 	.slick-next
-		right: 0	
-		margin: 0	
+		right: 0
+		margin: 0
 		svg
-			transform: rotate(-90deg)	
+			transform: rotate(-90deg)
 
 	.product-slider-max
 		width: 100%
@@ -452,7 +525,7 @@
 		order: -1
 
 	.product-title
-		font-size: 28px	
+		font-size: 28px
 
 	.list-characteristics p
 		min-width: auto
@@ -463,7 +536,7 @@
 		font-size: 20px
 
 	.form-callback
-		margin: 30px auto 0	
+		margin: 30px auto 0
 
 @media only screen and (max-width: 480px)
 
@@ -473,9 +546,9 @@
 			font-size: 40px
 
 	.product-slider-max .product-slider__item
-		height: 300px		
+		height: 300px
 
 	.product-title
-		font-size: 24px	
+		font-size: 24px
 
 @media only screen and (max-width: 370px)

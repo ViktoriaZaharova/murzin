@@ -35,6 +35,9 @@
   .list-social {
     margin: 0 40px;
   }
+  .label-checkbox {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 1570px) {
   body {
@@ -112,6 +115,21 @@
   }
   .about-image3 {
     margin: -350px 0 0 -100px;
+  }
+  .filter-wrapper {
+    margin: 20px 0;
+  }
+  .label-checkbox {
+    font-size: 18px;
+  }
+  .filter-box:first-child {
+    max-width: 380px;
+  }
+  .filter-box:nth-child(2) {
+    width: 460px;
+  }
+  .filter-box:last-child {
+    width: calc(100% - 380px - 460px);
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -278,6 +296,73 @@
     top: 20px;
     right: 20px;
   }
+  .filter-wrapper {
+    display: none;
+    position: fixed;
+    background: #fff;
+    left: 0;
+    top: 0;
+    height: 100%;
+    max-width: 280px;
+    padding: 30px;
+    margin: 0;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  .filter-wrapper__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter-wrapper__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .list-checkbox li {
+    width: 100%;
+  }
+  .list-checkbox.w-30 li {
+    width: 100%;
+  }
+  .list-checkbox.w-30 li:nth-child(3n) {
+    width: 100%;
+  }
+  .filter-box {
+    padding: 0;
+    max-width: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px 0 0;
+  }
+  .filter-box .h4 {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .filter-box:last-child, .filter-box:first-child, .filter-box:nth-child(2) {
+    width: 100%;
+    max-width: none;
+  }
+  .filter-box::before {
+    display: none;
+  }
+  .btn-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .select-my {
+    height: 54px;
+    padding: 0 20px;
+    background-size: 20px;
+    background-position: calc(100% - 10px) center;
+  }
 }
 @media only screen and (max-width: 1200px) {
   body {
@@ -297,6 +382,9 @@
   }
   .modal-dialog {
     font-size: 20px;
+  }
+  .page {
+    margin: 0 0 60px;
   }
 }
 @media only screen and (max-width: 992px) {
