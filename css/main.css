@@ -16,21 +16,12 @@
 }
 
 .parallax-text {
-  color: rgba(48, 47, 53, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-.parallax-text span {
-  content: attr(data-hover);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  color: #302F35;
-  overflow: hidden;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(48, 47, 53, 0.2)), color-stop(50%, #302F35)) 0 0/200% 100%;
+  background: linear-gradient(to right, rgba(48, 47, 53, 0.2) 50%, #302F35 50%) 0 0/200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: slice;
+  -webkit-box-decoration-break: slice;
 }
 
 .about {
@@ -79,6 +70,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 .about-image img {
   width: 100%;

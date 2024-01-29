@@ -1,5 +1,7 @@
+// phone mask
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+// slick sliders
 $('.product-slider-preview').slick({
 	slidesToShow: 3,
 	vertical: true,
@@ -35,11 +37,15 @@ $('.product-slider-max').slick({
 	asNavFor: '.product-slider-preview',
 });
 
-
+// slick slider in modal
 $('.modal').on('shown.bs.modal', function (e) {
 	$('.slick-slider').slick('setPosition');
 });
 
+// animate.css + wow.js
+new WOW().init();
+
+// mobile menu
 $('.btn-burger').on('click', function (e) {
 	e.preventDefault();
 	$('header .nav-menu').fadeToggle()
@@ -61,6 +67,7 @@ $('.go_to').click(function (e) {
 	return false;
 });
 
+// filter mobile
 $('.btn-filter').on('click', function (e) {
 	e.preventDefault();
 	$('.filter-wrapper').fadeToggle();
@@ -70,13 +77,12 @@ $('.filter-wrapper__close').on('click', function () {
 	$('.filter-wrapper').fadeOut();
 });
 
-// $(function () {
-// 	$('.parallax').animate({
-// 		scrollTop: $(document).height()
-// 	}, 2000);
-// 	$(window).scroll(function () {
-// 		$('.parallax-text > span').css({
-// 			transform: ''
-// 		});
-// 	});
-// });
+
+// animate background color scroll
+const span = document.querySelector('.parallax-text');
+
+window.addEventListener('scroll', () => {
+	const t = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+	span.style.backgroundPosition = `${-t * 800}% 0`;
+});
+

@@ -15,19 +15,11 @@
 		width: 100%
 
 .parallax-text
-	color: rgba($accent, .1)
-	position: relative
-	overflow: hidden
-	span
-		content: attr(data-hover)
-		position: absolute
-		top: 0
-		left: 0
-		height: 100%
-		width: 0
-		color: $accent
-		overflow: hidden
-		transition: all .1s ease
+	background: linear-gradient(to right, rgba($accent, .2) 50%, $accent 50%) 0 0 / 200% 100%
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	box-decoration-break: slice
+	-webkit-box-decoration-break: slice
 
 // about
 .about
@@ -59,6 +51,8 @@
 
 .about-image
 	@include d-flex
+	position: relative
+	overflow: hidden
 	img
 		width: 100%
 		height: 100%
@@ -255,4 +249,4 @@
 				width: 40%
 
 .btn-filter
-	display: none	
+	display: none
