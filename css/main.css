@@ -1,18 +1,21 @@
 .home {
   width: 100%;
-  background: url("../img/home-bg.jpeg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 .home img {
   width: 100%;
 }
 
-.home-image {
-  width: 100%;
-}
-.home-image img {
-  width: 100%;
+.home-bg-parallax {
+  position: absolute;
+  left: 50%;
+  top: -237px;
+  -webkit-transform: translate(-50%, 0) !important;
+          transform: translate(-50%, 0) !important;
+  z-index: -1;
 }
 
 .parallax-text {

@@ -503,6 +503,9 @@
   body {
     font-size: 16px;
   }
+  body.fixed-header {
+    padding: 110px 0 0;
+  }
   .logo {
     max-width: 220px;
   }

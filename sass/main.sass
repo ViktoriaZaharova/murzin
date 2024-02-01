@@ -2,17 +2,24 @@
 
 .home
 	width: 100%
-	background: url('../img/home-bg.jpeg') no-repeat center
-	background-size: cover
+	// background: url('../img/home-bg.jpeg') no-repeat center
+	// background-size: cover
 	// min-height: 650px
-	background-attachment: fixed
+	// background-attachment: fixed
+	background: #fff
+	position: relative
+	z-index: 1
+	overflow: hidden
 	img
 		width: 100%
 
-.home-image
-	width: 100%
-	img
-		width: 100%
+.home-bg-parallax
+	position: absolute
+	left: 50%
+	top: -237px
+	transform: translate(-50%,0) !important
+	z-index: -1
+	
 
 .parallax-text
 	background: linear-gradient(to right, rgba($accent, .2) 50%, $accent 50%) 0 0 / 200% 100%

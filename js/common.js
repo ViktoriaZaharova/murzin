@@ -42,8 +42,49 @@ $('.modal').on('shown.bs.modal', function (e) {
 	$('.slick-slider').slick('setPosition');
 });
 
+// $(window).scroll(function () {
+// 	// проверка на докрутку до определенного элемента
+// 	var scroll_picca = $('header').offset().top;
+
+// 	//если мы докрутили до нужного элемента
+// 	if ($(this).scrollTop() > scroll_picca) {
+// 		// создаем эффекты и анимацию
+// 		$("header").addClass('fixed');
+// 		$("body").addClass('fixed-header');
+
+// 	} else {
+// 		$("header").removeClass('fixed');
+// 		$("body").removeClass('fixed-header');
+// 	}
+// });
+
+$(function () {
+	menu_top = $('header').offset().top;        // запоминаем положение меню
+	$(window).scroll(function () {             // отслеживаем событие прокрутки страницы
+		if ($(window).scrollTop() > menu_top) {  // если прокрутка дошла до меню
+			if ($('header').css('position') != 'fixed') {  // проверяем, если меню еще не зафиксировано
+				$("header").addClass('fixed');
+				$("body").addClass('fixed-header');
+				// $('.menu').css('position', 'fixed');  // задаем блоку меню свойство position = fixed
+				// $('.menu').css('top', '0');           // положение в самом верху
+				// $('.content').css('margin-top', '80px'); // делаем отступ, чтобы контент не "скакал" в момент фиксации меню
+			}
+		} else {                                 // прокрутка страницы обратно вверх достигла место "перехода" меню
+			if ($('header').css('position') == 'fixed') {  // если меню зафиксировано
+				// $('.menu').css('position', '');
+				// $('.menu').css('top', '');
+				// $('.content').css('margin-top', '');
+				$("header").removeClass('fixed');
+						$("body").removeClass('fixed-header');
+			}
+		}
+	});
+});
+
 // animate.css + wow.js
 new WOW().init();
+
+var rellax = new Rellax('.rellax');
 
 // mobile menu
 $('.btn-burger').on('click', function (e) {
