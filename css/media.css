@@ -497,6 +497,13 @@
   .stages-work-box__number {
     font-size: 50px;
   }
+  .about-masters {
+    padding: 400px 0 50px;
+  }
+  .about-masters::before {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(20.9%, #302F35), color-stop(80.06%, rgba(48, 47, 53, 0)));
+    background: linear-gradient(0deg, #302F35 20.9%, rgba(48, 47, 53, 0) 80.06%);
+  }
   .about-masters h2 {
     font-size: 70px;
   }
@@ -543,7 +550,11 @@
     margin-bottom: 30px;
   }
   .about-masters {
-    padding: 400px 0 40px;
+    padding: 200px 0 40px;
+  }
+  .about-masters::before {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #302F35), color-stop(90%, rgba(48, 47, 53, 0)));
+    background: linear-gradient(0deg, #302F35 30%, rgba(48, 47, 53, 0) 90%);
   }
   .about-masters h2 {
     font-size: 50px;
